@@ -36,7 +36,11 @@ const App = ({ contact, postContact }) => {
             }
 
             postContact(data)
-            setErrMsg('')
+            setErrMsg('');
+            setErrMsg('');
+            setToEmail('');
+            setSubject('');
+            setMessage('');
         }
     }
 
