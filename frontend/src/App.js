@@ -36,7 +36,8 @@ const App = ({ contact, postContact }) => {
             }
 
             postContact(data)
-            setErrMsg('');
+            console.log(data);
+
             setErrMsg('');
             setToEmail('');
             setSubject('');
@@ -76,6 +77,7 @@ const App = ({ contact, postContact }) => {
                     type="email" 
                     id="toEmail" 
                     name='toEmail'
+                    value={toEmail}
                     onChange={e => setToEmail(e.target.value)}
                     placeholder="example@support.com" 
                     className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"  />
@@ -88,6 +90,7 @@ const App = ({ contact, postContact }) => {
                     type="text" 
                     id="subject" 
                     name='subject'
+                    value={subject}
                     onChange={e => setSubject(e.target.value)} 
                     placeholder="Enter subject" 
                     className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"  />
@@ -100,6 +103,7 @@ const App = ({ contact, postContact }) => {
                         type="text" 
                         id="message" 
                         name='message'
+                        value={message}
                         onChange={e => setMessage(e.target.value)} 
                         placeholder="Enter you message..."
                         className="resize-none h-28 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
