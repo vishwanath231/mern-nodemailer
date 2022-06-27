@@ -2,7 +2,9 @@ import express from 'express';
 import dotenv from 'dotenv';
 import colors from 'colors';
 import cors from 'cors';
-import Router from './router.js'
+import Router from './router.js';
+import path from 'path';
+
 
 dotenv.config();
 
