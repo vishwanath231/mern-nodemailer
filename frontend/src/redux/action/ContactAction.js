@@ -13,7 +13,8 @@ export const postContact = (data) => (dispatch) => {
             type: CONTACT_REQUEST
         })
 
-
+        // "proxy": "http://localhost:5000"
+        // http://localhost:5000/api/contact
         axios.post(`/api/contact`, data)
         .then(res => {
 
